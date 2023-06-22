@@ -5,6 +5,7 @@ import RadioGroup from "./RadioGroup"
 import CheckBox from "./CheckBox"
 import MultiSelect from "./MultiSelect"
 import ActionButton from "./ActionButton"
+import InputWithLabel from "./InputWithLabel"
 export const Controls={
     Input,
     Button,
@@ -12,7 +13,8 @@ export const Controls={
     RadioGroup,
     CheckBox,
     MultiSelect,
-    ActionButton
+    ActionButton,
+    InputWithLabel
 
 }
 export default Controls;

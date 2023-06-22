@@ -5,7 +5,7 @@ import "./HeaderStyles.css";
 import TableRowsIcon from '@mui/icons-material/TableRows';
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function Navbar() {
+export default function Navbar_Admin() {
   const navRef = useRef();
   const location = useLocation();
 
@@ -19,11 +19,11 @@ export default function Navbar() {
         <h3>G3 Technology.</h3>
       </Link>
       <nav ref={navRef}>
-        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+        <Link to="/Admin" className={location.pathname === "/" ? "active" : ""}>
           Dashboard
         </Link>
         <Link
-          to="/Employees"
+          to="/EmpForPm"
           className={location.pathname === "/Employees" ? "active" : ""}
         >
           Employees

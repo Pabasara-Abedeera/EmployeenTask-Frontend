@@ -1,14 +1,7 @@
 import * as React from 'react';
 import Card from '../../Components/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Grid } from '@material-ui/core';
-import {makeStyles} from '@material-ui/core';
-import { Padding } from '@mui/icons-material';
 import { Link} from 'react-router-dom';
-import styled from 'styled-components'
 export default function Dashboard() {
   const styles = {
     body: {

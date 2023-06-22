@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
-import Controls from "../../Components/Controls/Controls";
-import EditOutlinedIcon from '@mui/icons-material/EditOutlined'
-import CloseIcon from '@mui/icons-material/Close'
-import PageHeader from '../../Components/PageHeader'
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import ConfirmDialog from "../../Components/ConfirmDialog";
-import SideMenu from "../../Components/SideMenu";
+
 
 import {
-  TextField,
-  Typography,
-  DialogContent,
-  Dialog,
-  DialogTitle,
-  DialogActions,
-  Button,
   Table,
   TableBody,
   TableCell,
@@ -31,6 +18,7 @@ import ControlPointIcon  from "@mui/icons-material/ControlPoint";
 import { ENDPOINTS, createAPIEndpoint } from "../../api";
 import { TablePagination } from "@material-ui/core"; 
 import axios from "axios";
+import { Spa } from "@mui/icons-material";
 
 const useStyles = makeStyles(theme=>({
   table: {
@@ -51,10 +39,11 @@ const useStyles = makeStyles(theme=>({
   },
   root:{
     marginTop:0,
-    marginBottom:theme.spacing(4)
+    marginBottom:theme.spacing(0)
   },
   content:{
     margin:theme.spacing(5),
+    marginTop:theme.spacing(0),
     marginLeft:"5%"
   },
   searchInput: {
@@ -67,30 +56,8 @@ const useStyles = makeStyles(theme=>({
   button: {
     marginLeft: theme.spacing(10),
   },
-  dialogWrapper: {
-    padding: theme.spacing(2),
-    positions: "absolute",
-    top: theme.spacing(3),
-  },
-  dialogTitle: {
-    paddingRight: "0px",
-  },
-  searchInput: {
-    width: "75%",
-    '&:hover':{
-      backgroundColor:'#e4f7f5'
-    }
-  },
-  greenColumn: {
-    backgroundColor: '#9af5a6',
-
-  },
-  greenRow: {
-    backgroundColor: '#9af5a6',
-    opacity:"50%"
-  },
   container:{
-    width:"300px"
+    width:"300px",
   }
 }));
 
